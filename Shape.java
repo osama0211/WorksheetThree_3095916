@@ -1,5 +1,5 @@
 package griffith;
-abstract class Shape {
+public abstract class Shape {
     private String name;
 
     public Shape(String name) {
@@ -14,7 +14,6 @@ abstract class Shape {
         this.name = name;
     }
 
-    // Abstract methods
     public abstract double area();
 
     public abstract double perimeter();
