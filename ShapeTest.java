@@ -32,6 +32,22 @@ public class ShapeTest {
         assertEquals(6, triangle.perimeter(), EPSILON);
         assertEquals("Right Angled Triangle: Triangle, Base: 1.0, Height: 2.0, Hypotenuse: 3.0", triangle.toString());
     }
+    @Test
+    void testIntegration() {
+        ArrayList<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle("Circle", 2.7));
+        shapes.add(new Circle("Circle", 3.8));
+        shapes.add(new Rhombus("Rhombus", 2, 2, 8));
+        shapes.add(new Rhombus("Rhombus", 1, 7, 6));
+        shapes.add(new RightAngledTriangle("Triangle", 1, 2, 3));
+        shapes.add(new RightAngledTriangle("Triangle", 4, 8, 9));
+
+        for (Shape shape : shapes) {
+            assertEquals(shape.area(), shape.area(), EPSILON);
+            assertEquals(shape.perimeter(), shape.perimeter(), EPSILON);
+        }
+
+    }
 
 }
 
