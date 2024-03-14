@@ -1,6 +1,6 @@
 package griffith;
 
-public abstract class RightAngledTriangle extends Shape {
+public class RightAngledTriangle extends Shape {
     private double a;
     private double b;
     private double c;

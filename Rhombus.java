@@ -38,7 +38,6 @@ public class Rhombus extends Shape {
 
     @Override
     public double area() {
-        // Calculatearea
         return 0.5 * diagonal1 * diagonal2;
     }
 
@@ -49,8 +48,6 @@ public class Rhombus extends Shape {
 
     @Override
     public String toString() {
-        return "Rhombus: " + getName() + ", Side: " + side + " Area: " + area() + " perimetr: " + perimeter();
+        return "Rhombus: " + getName() + ", Side: " + side + " Area: " + area() + " Perimeter: " + perimeter();
     }
 }
-
-
